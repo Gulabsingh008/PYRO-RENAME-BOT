@@ -26,8 +26,8 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
+    API_ID    = os.environ.get("API_ID", "20870885")
+    API_HASH  = os.environ.get("API_HASH", "a7e1280d30225e7aa036d57a0c9bb929")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
    
     # database config
@@ -37,9 +37,9 @@ class Config(object):
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1114789110').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1002172671575") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002168191467"))
     MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "2")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
     
     # wes response configuration     
